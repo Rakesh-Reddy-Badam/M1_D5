@@ -12,7 +12,7 @@ Write a function "area" which receives 2 parameters (l1,l2) and calculates the a
 const area= function(L1,L2){
     return L1*L2
 }
-console.log(area(2,3))
+//console.log(area(2,3))
 
 /* EXERCISE 2
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
@@ -25,7 +25,7 @@ const crazySum= function(a,b){
         return a+b
     }
 }
-console.log(crazySum(2,2))
+//console.log(crazySum(2,2))
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
@@ -38,7 +38,7 @@ const crazyDiff= function(a){
         return Math.abs(19-a)
     }
 }
-console.log(crazyDiff(23))
+//console.log(crazyDiff(23))
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
@@ -53,7 +53,7 @@ const booundary= function(n){
         return false
     }
 }
-console.log(booundary(101))
+//console.log(booundary(101))
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
@@ -66,7 +66,7 @@ const strivify= function(a){
         return 'Strive '+a
     }
 }
-console.log(strivify('Strive'))
+//console.log(strivify('Strive'))
 
 /* EXERCISE 6
 Write a function "check3and7" which accepts a positive number and check if it is a multiple of 3 or a multiple of 7.
@@ -82,7 +82,7 @@ const check3and7= function(a){
         return false
     }
 }
-console.log(check3and7(6))
+//console.log(check3and7(6))
 
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
@@ -94,7 +94,7 @@ const reverseString= function(a){
     }
     return newString
 }
-console.log(reverseString('rakesh'))
+//console.log(reverseString('rakesh'))
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
@@ -107,7 +107,7 @@ const upperFirst= function(a){
     const modifiedString=eachWord.join(' ')
     return modifiedString
 }
-console.log(upperFirst('my name is rakesh reddy'))
+//console.log(upperFirst('my name is rakesh reddy'))
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
@@ -116,7 +116,7 @@ const cutString=function(a){
     brandNewString=a.substring(1,a.length-1)
     return brandNewString
 }
-console.log(cutString('rakesh'))
+//console.log(cutString('rakesh'))
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
@@ -127,7 +127,7 @@ function giveMeRandom(n){
     }
     return randomNum
 }
-console.log(giveMeRandom(4))
+//console.log(giveMeRandom(4))
 
 
 /* WHEN YOU ARE FINISHED
