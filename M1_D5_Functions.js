@@ -59,7 +59,7 @@ Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
 const strivify= function(a){
-    if(a==='Strive'){
+    if(a.startsWith('Strive')){
         return a
     }
     else{
@@ -100,9 +100,9 @@ Write a function "upperFirst" to capitalize the first letter of each word of a g
 */
 
 const upperFirst= function(a){
-    const eachWord=a.split(' ')
-    for(i=0;i<=eachWord.length;i++){
-        eachWord[i]=eachWord.indexOf(0).toUppercase+eachWord[i].slice(1)
+    let eachWord=a.split(' ')
+    for(let i=0;i<eachWord.length;i++){
+        eachWord[i]=eachWord[i].charAt(0).toUpperCase()+eachWord[i].slice(1)
     }
     const modifiedString=eachWord.join(' ')
     return modifiedString
@@ -112,13 +112,23 @@ console.log(upperFirst('my name is rakesh reddy'))
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-/* WRITE YOUR CODE HERE */
-
+const cutString=function(a){
+    brandNewString=a.substring(1,a.length-1)
+    return brandNewString
+}
+console.log(cutString('rakesh'))
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
+function giveMeRandom(n){
+    let randomNum = []
+    for(i=0;i<n;i++){
+        randomNum.push(Math.floor(Math.random() * 11))
+    }
+    return randomNum
+}
+console.log(giveMeRandom(4))
 
-/* WRITE YOUR CODE HERE */
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
